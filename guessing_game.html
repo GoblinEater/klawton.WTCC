@@ -23,6 +23,8 @@
             <button type="button" id="submit">Check Guess</button>
             <label for="result">Result:</label><div name="result" id="result"></div>
         </form>
+
+
         <py-script>
             from pyscript import when
             @when("click", selector="#submit")
@@ -32,11 +34,12 @@
                 if user_guess == selection:
                     result.write("Congratulations! You guessed correctly.")
                 elif user_guess > selection:
-                    result.write("Try again! Your guess is too high")
+                    result.write("Try again! Your guess is too high.")
                 else:
-                    result.write("Try again! Your guess is too low")
+                    result.write("Try again! Your guess is too low.")
+
+                    
         </py-script>
-        </form>
     </body>
 </html>
 
