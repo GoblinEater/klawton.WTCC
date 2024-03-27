@@ -1,0 +1,13 @@
+import random
+
+number = random.randint(1,3)
+
+if number == 1:
+    print("No Way, Jose")
+#    print(number) #Used for debug
+if number == 2:
+    print("Maybe, go careful")
+#    print(number) #Used for debug
+if number == 3:
+    print("Go for it, balls to the wall")
+#    print(number) #Used for debug
